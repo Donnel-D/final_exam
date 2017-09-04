@@ -14,9 +14,10 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
         <?php wp_head(); ?>
 </head>
-    <body <?php body_class(); ?>>
-	
-	<header id="masthead" class="site-header" role="banner">
+<body <?php body_class(); ?>>
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
+<header id="masthead" class="site-header" role="banner">
         <div class="header-wrapper">
             <div class="container">
                 <div class="row">
@@ -26,8 +27,7 @@
 					  
 							orbitr_the_custom_logo(); ?>
 					<?php } else { ?>
-
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" class="plain"><?php bloginfo( 'name' ); ?></a>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" class="plain"><?php bloginfo( 'name' ); ?></a>
 					<?php } ?>
 				</div>		
                   </div>
